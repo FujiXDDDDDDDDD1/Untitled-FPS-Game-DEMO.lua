@@ -1,10 +1,3 @@
-local InfiniteJumpEnabled = true
-game:GetService("UserInputService").JumpRequest:connect(function()
-	if InfiniteJumpEnabled then
-		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
-	end
-end)
-
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
     vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -19,8 +12,8 @@ game.StarterGui:SetCore("SendNotification", {
 })
 wait(1)
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Fu Kang Hub";
-    Text = "Siuu"; -- what the text says (ofc)
+    Title = "Fu Kang Hub รันเเล้ว";
+    Text = "ขอให้สนุกกับการใช้ Script"; -- what the text says (ofc)
     Duration = 5
 })
 _G.HeadSize = 20
